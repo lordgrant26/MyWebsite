@@ -1,0 +1,342 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(51, 49, 49);
+    
+}
+
+.logo {
+    color:white;
+}
+
+span{
+    color: red;
+}
+
+.topnav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 35px;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.banner h1{
+    line-height: 100px;
+    position: absolute;
+    top:19%;
+    right:30%;
+    color:white;
+    font-size: 70px;
+}
+
+/*.....................................................Card Effect...........................................................*/
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    background-color: rgb(219, 222, 222);
+}
+
+.card1 {
+    height: 40vh;
+    width: 40vh;
+    margin-right: 55px;
+    margin-left: 55px;
+    color: white;
+    border-radius: 10px;
+    background-color:blue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 13vh;
+}
+
+.fa-html5 {
+    font-size: 55px;
+    background-color: #f06529
+}
+
+.cardbtn1:hover {
+    font-size: 30px;
+    color:greenyellow;
+}
+.card2 {
+    height: 40vh;
+    width: 40vh;
+    color: white;
+    border-radius: 10px;
+    background-color:blue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 13vh;
+}
+
+.fa-css3 {
+    font-size: 55px;
+    background-color: #264de4
+}
+
+.cardbtn2:hover {
+    font-size: 30px;
+    color:greenyellow;
+}
+
+.card3 {
+    height: 40vh;
+    width: 40vh;
+    margin-right: 55px;
+    margin-left: 55px;
+    color: white;
+    border-radius: 10px;
+    background-color:blue;
+    text-align: center;
+    padding: 10px;
+    margin-top: 13vh;
+}
+
+.jsImg {
+    width: 55px;
+}
+
+.cardbtn3:hover {
+    font-size: 22px;
+    color:greenyellow;
+}
+
+
+.card1 h2 {
+    font-family:'cursive';
+}
+
+/*........................................................Main Column..........................................................*/
+
+.main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid: gap 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+/*........................................................Left Column..........................................................*/
+
+.left-column {
+    background-image: url(paper.jpg);
+    height: 80vh;
+    color:black;
+}
+
+.left-column p{
+    display:flex;
+    padding: 15px;
+    align-content:center;
+    margin:25px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.fiverrH1 {
+    font-size:50px;
+    text-align: center;
+    position: relative;
+    animation: fiverr 5s both;
+}
+
+@keyframes fiverr {
+    0% {top: 0px; color:#264de4;}
+    50% {top: 400px; color: red;}
+    100% {top: 0px;}
+}
+
+.cardbtn1, .cardbtn2, .cardbtn3 {
+    padding: 7px;
+    border-radius: 10px;
+    color:white;
+    text-align: center;
+    background-color: red;
+}
+
+
+
+.left-column, .cardbtn1:hover, .cardbtn2:hover, .cardbtn3:hover {
+    background-color:transparent;
+}
+
+.left-column {
+    padding: 7px;
+    border-radius: 10px;
+    color:blue;
+    text-align: center;
+    background-color: transparent;
+}
+
+.fiverrP, .fiverrP2 {
+    color: black;
+}
+
+.fiverrbtn {
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: aqua;
+    background-color: transparent;
+    color:#f06529
+}
+
+.fiverrbtn:hover {
+    font-size: 22px;
+    background-color: lightgray;
+}
+
+
+/*..................................................Right Column.......................................................*/
+
+.right-column{
+    height:80vh;
+    color:white;
+    overflow: hidden;
+}
+
+
+
+.rightImg img {
+    height: 100vh;
+    width: 100vh;
+}
+
+.right-column h1{
+    text-align: center;
+}
+
+.last {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 4px;
+    color: white;
+    
+
+}
+
+.function {
+    background-color: red;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: black 12px -24px 20px;
+}
+
+.function img {
+    height: 60px;
+    display: block;
+    padding: 2px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.react-js {
+    background-color: blue;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: black 12px -24px 20px;
+}
+
+.react-js img {
+    height: 60px;
+    display: block;
+    padding: 2px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.loop {
+    background-color: red;
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: black 12px -24px 20px;
+}
+
+.loop img {
+    height: 60px;
+    display: block;
+    padding: 2px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+.functionP, .reactP, .loopP {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+P {
+    text-align: center;
+}
+
+.function, .react-js, .loop {
+    animation-duration: 2s;
+    animation-name: program;
+}
+
+button {
+    padding: 9px;
+    color: white;
+    border-radius: 10%;
+    background-color: transparent;
+}
+
+.btnn {
+    text-align: center;
+}
+
+.btnn1 {
+    padding: 9px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: transparent;
+}
+
+.btnn2 {
+    padding: 9px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: transparent;
+}
+
+@keyframes program {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}

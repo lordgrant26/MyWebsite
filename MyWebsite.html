@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Cheetah Academy</title>
+    <link rel="stylesheet" type="text/css" href="MyWebsite.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/87435710cb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h1>Cheetah <span>Academy</span></h1>
+        </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://www.google.com" target="_blank">Lesson Link</a></li>
+        <li><a href="#">Donation</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div class="banner">
+        <img src="images/ai class.jpg">
+        <h1><marquee> Cheetah Academy</marquee></h1>
+    </div>
+
+    <div class="courses">
+        
+            <div class="card1">
+                <i class="fa fa-html5"></i>
+                <h2>HTML Lessons</h2><br>
+                <p>Click the button for your HTML lessons.</p><br><br>
+                <button class="cardbtn1">HTML Lessons</button>
+            </div>
+
+            <div class="card2">
+                <i class="fa fa-css3"></i>
+                <h2>CSS Lessons</h2><br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p><br><br>
+                <button class="cardbtn2">CSS Lessons</button>
+            </div>
+
+            <div class="card3">
+                <img src="images/js.png" class="jsImg">
+                <h2>JAVASCRIPT Lessons</h2><br>
+                <p>Lorem ipsum dolor sit, amet atur eius quam nemo.</p><br><br>
+                <button class="cardbtn3">JAVASCRIPT Lessons</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="left-column">
+            <h1 class="fiverrH1"><i>fiverr</i></h1>
+            
+                <p class="fiverrP"><i>We here at Cheetah Academy will help you set up a
+                responsive website. All you have to do is visit our fiverr page.
+            </i></p>
+                <p class="fiverrP2"><i>If you are willing to build  a website,
+                go ahead and click the button below.
+                it will redirect you to our fiverr page
+            </i></p>
+                <button class="fiverrbtn"><a href="https://www.fiverr.com/lordgrant26"></a>Create Website</a></button>
+        </div>
+
+        <div class="right-column">
+            <div class="rightImg">
+                <img src="images/computer2.jpg">
+            </div>
+
+            <div class="rightImg">
+            <img src="images/computer1.jpg">
+            </div>
+
+            <div class="rightImg">
+                <img src="images/pen.jpg">
+            </div>
+            
+            <h1>Right Column</h1>
+        </div>
+    </div>
+
+    <div class="last">
+        <div class="function">
+            <img src="images/functiion.png"><br>
+            <p class="functionP">FUNCTION</p><br>
+            <div class="btnn"> 
+                <button>Crash Course</button>
+            </div>
+        </div>
+
+        <div class="react-js">
+            <img src="images/react.png"><br>
+            <p class="reactP">REACT JS</p><br>
+            <div class="btnn1"> 
+                <button>Crash Course</button>
+            </div>
+        </div>
+
+        <div class="loop">
+            <img src="images/loop.png"><br>
+            <p class="loopP">LOOP</p><br>
+            <div class="btnn2"> 
+                <button>Crash Course</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let indexValue = 0;
+        myWebsite();
+
+            function myWebsite(){
+                let x;
+                let slides = document.getElementsByClassName ("rightImg");
+                for(x = 0; x < slides.length; x++){
+                    slides[x].style.display = "none";
+                }
+                indexValue++;
+                if(indexValue > slides.length){indexValue = 1}
+
+                slides[indexValue -1].style.display = "block";
+                setTimeout(myWebsite, 2500);
+
+            }
+    </script>
+</body>
+
+</html>
