@@ -2,8 +2,11 @@
 <head>
     <title>Cheetah Academy</title>
     <link rel="stylesheet" type="text/css" href="MyWebsite.css">
+    <script src="Mywebsite.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/87435710cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -36,14 +39,14 @@
             <div class="card2">
                 <i class="fa fa-css3"></i>
                 <h2>CSS Lessons</h2><br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</p><br><br>
+                <p>Click the button for your CSS lessons.</p><br><br>
                 <button class="cardbtn2">CSS Lessons</button>
             </div>
 
             <div class="card3">
                 <img src="images/js.png" class="jsImg">
                 <h2>JAVASCRIPT Lessons</h2><br>
-                <p>Lorem ipsum dolor sit, amet atur eius quam nemo.</p><br><br>
+                <p>Click the button for your JAVASCRIPT lessons..</p><br><br>
                 <button class="cardbtn3">JAVASCRIPT Lessons</button>
             </div>
         </div>
@@ -70,7 +73,7 @@
             </div>
 
             <div class="rightImg">
-            <img src="images/computer1.jpg">
+            <img src="images/mypc.jpg">
             </div>
 
             <div class="rightImg">
@@ -97,7 +100,7 @@
                 <button>Crash Course</button>
             </div>
         </div>
-
+ 
         <div class="loop">
             <img src="images/loop.png"><br>
             <p class="loopP">LOOP</p><br>
@@ -108,24 +111,77 @@
     </div>
 
 
-    <script>
-        let indexValue = 0;
-        myWebsite();
+    <!--------------------------------------firstSlide---=========================------------------->
 
-            function myWebsite(){
-                let x;
-                let slides = document.getElementsByClassName ("rightImg");
-                for(x = 0; x < slides.length; x++){
-                    slides[x].style.display = "none";
-                }
-                indexValue++;
-                if(indexValue > slides.length){indexValue = 1}
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class= "swiper-slide">
 
-                slides[indexValue -1].style.display = "block";
-                setTimeout(myWebsite, 2500);
+                <div class="snapiro"> 
+                    <img src="images/Snapiro.png">
+                </div>
+                
+                <div class ="snapiro-card">
+                    <div class="snapiroWho">
+                        <div class="snap1">
+                            <h1>Who Are Snapiros?</h1>
+                            <p>We’re a dynamic team of young minds, firm believers in the ‘simplicity is genius’ mantra. 
+                                We’ve teamed up to establish the ultimate digital asset trading oasis, and we’ve sprinkled 
+                                it with a good dose of humor in our work culture – because who said trading can’t be fun?</p>
+                        </div>
 
-            }
-    </script>
+                        <div class="snap2">
+                            <h1>Archievers</h1>
+                            <p>To be the fastest and easiest app when it comes to trading digital assets.</p>
+                        </div>
+
+                        <div class="snap3">
+                            <h1>Achieved Success</h1>
+                            <p>We've moved from hundreds to thousands of happy clients who won't trade except it's Snapiro.</p>
+                        </div>
+                    </div>
+                
+
+                    <div class="snapTeam">
+                        <img src="images/snapiro-team.jpg">
+                    </div>
+                </div>
+            </div>
+        
+    <!-------------------------------------secondSlide---=========================------------------->
+            <div class= "swiper-slide">
+                <div class="swiper-snapiro1">
+                    <div class="snapiro-card1">
+                        <img src="images/snapiro-team1.jpg">
+                    </div>
+
+                    <div class="snapiro-card2">
+                        <h5>Everyone is Trading</h5>
+                        <h1>Buy, Sell, & Trade Digital Assets With Ease</h1>
+                        <h4>Join millions of people who buy and sell Bitcoins and other digital assets on Snapiro.</h4>
+                    
+                        <div class="count">
+                            <span class="num" data-val="40">00 </span> <span class="paragraph">K</span>
+                            <span class="active-users">Active Users</span>
+                            
+                            <p class="stroke">|</p>
+
+                            <span class="num" data-val="99">00 </span> <p class="percent">%</p>
+                            <span class="happy-clients">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.snapiro.com"><button class="btnSnapiro">Visit Snapiro</button></a>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    
+
 </body>
-
 </html>
