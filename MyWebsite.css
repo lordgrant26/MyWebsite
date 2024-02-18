@@ -2,6 +2,7 @@
     box-sizing:border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 .topnav {
@@ -52,6 +53,7 @@ span{
     display: flex;
     justify-content: space-between;
     height: 70vh;
+    width: 100%;
     background-color: rgb(219, 222, 222);
 }
 
@@ -303,8 +305,17 @@ P {
 }
 
 .function, .react-js, .loop {
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-name: program;
+}
+
+@keyframes program {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 0%;
+    }
 }
 
 button {
@@ -332,11 +343,307 @@ button {
     background-color: transparent;
 }
 
-@keyframes program {
-    from {
-        margin-right: 100%;
+/*-----------------------------------------Snapiro-----------------------------------------*/
+
+
+.snapiro-card {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(217, 237, 245);
+}
+
+
+.snapiro img {
+    height: 200%;
+    width: 200px;
+    position: relative;
+    top: 50px;
+    left: 42.5%;
+    z-index: 1;
+}
+
+.snapiroWho {
+    width: 100%;
+    height: 70vh;
+}
+
+.snap1 {
+    width: 100%;
+    height: 35vh;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.snap1 h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color:rgb(3, 3, 61);
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.snap1 p {
+    line-height: 30px;
+    display: block;
+    color: rgb(42, 39, 39);
+    font-family: system-ui, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.snap2 {
+    width: 85%;
+    height: 27vh;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.snap2 h1 {
+    text-align: center;
+}
+
+
+.snap2 img {
+    height: 50px;
+    width: 50px;
+    
+    
+}
+
+.snap2 p {
+    font-size: 20px;
+
+    color: rgb(42, 39, 39);
+    font-family: system-ui, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.snap3 {
+    width: 85%;
+    height: 26.5vh;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.snap3 h1 {
+    text-align: center;
+}
+
+.snap3 p {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    color: rgb(42, 39, 39);
+    font-family: system-ui, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.snapTeam {
+    width: 100%;
+    height: 70vh;
+    margin-top: 200px;
+}
+
+.snapTeam img{
+    width: 100%;
+    height: 55vh;
+}
+
+
+.swiper-snapiro1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+    height: 60vh;
+    gap: 20px;
+}
+
+
+.snapiro-card1 {
+    width: 100%;
+    height: 100vh;
+}
+.snapiro-card1 img {
+    width: 100%;
+    height: 55vh;
+}
+
+.snapiro-card2{
+    width: 100%;
+    height: 70vh;
+    background-color: transparent;
+}
+
+.snapiro-card2 h1 {
+    font-family: 'Urbanist',sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 52px !important;
+    letter-spacing: -0.04px;
+    color: #141F39;
+}
+
+.snapiro-card2 h5 {
+    font-weight:400;
+    margin-bottom: 30px;
+    color: #141F39;
+    font-size: 20px;
+    text-align: center;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.snapiro-card2 h4 {
+    font-weight:400;
+    margin-top: 30px;
+    color: #141F39;
+    font-size: 20px;
+    text-align: center;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.count {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.num {
+    font-size: 40px;
+    color: #94a3c7;
+}
+
+
+.stroke {
+    height: 50px;
+    background-color: #898b88;
+}
+
+.paragraph {
+    font-size: 40px;
+    color: #94a3c7;
+  
+}
+
+.percent {
+    font-size: 40px;
+    color: #94a3c7;
+}
+
+
+
+.active-users, .happy-clients {
+    font-size: 20px;
+    color: #141F39;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 9px;
+    margin-left: 20px;
+}
+
+.stroke {
+    margin: 0 20px 0 20px;
+}
+
+.swiper .swiper-button-prev {
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.swiper .swiper-button-next {
+    color: white;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.swiper-button-prev::before,
+.swiper-button-prev::after {
+    font-size: 18px;
+}
+
+.btnSnapiro {
+    color: blue;
+    margin-left: 50%;
+    font-size: 20px;
+    border-color: #b3bbcf;
+    border-radius: 20px;
+    background-image: url(images/chart.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.btnSnapiro:hover {
+    transform: rotateX;
+    font-size:large;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightgray;
     }
-    to {
-        margin-right: 0%;
+    
+    .topnav li {
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 175px;
+    }
+
+    .courses {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1, .card2, .card3 {
+        width: 60%;
+        margin-top: 15px;
+    }
+
+    .main {
+        
+        align-items: center;
+        margin-top: 350px;
+        flex-direction: column;
+    }
+
+    .left-column img {
+        width: 100%;
+    }
+
+    .right-column img {
+        width: 100%;
+    }
+
+    .last{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .function, .react-js, .loop {
+        margin-top: 20px;
     }
 }
