@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .topnav {
@@ -10,26 +11,53 @@
     align-items: center;
     justify-content:space-between;
     background-color: rgb(51, 49, 49);
-    
+    padding: 30px;
 }
 
 .logo {
     color:white;
 }
 
+.navLink ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
 span{
     color: red;
 }
 
-.topnav li {
+.navLink li {
     list-style-type: none;
-    display: inline-block;
-    padding: 35px;
 }
 
-.topnav a {
-    color: white;
+.navLink li a {
     text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 20px;
+}
+
+.toggle-btn {
+    position: absolute;
+    left: 90%;
+    top: 45px;
+}
+
+.toggle-btn .bar{
+    width: 30px;
+    height: 3px;
+    display: none;
+    margin: 5px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+hr {
+    display: none;
 }
 
 .banner img{
@@ -134,22 +162,24 @@ span{
     grid-template-columns: 1fr 1fr;
     grid: gap 10px;
     width: 100%;
-    height: 100%;
     margin-top: 5px;
 }
 
 /*........................................................Left Column..........................................................*/
 
 .left-column {
-    background-image: url(paper.jpg);
+    background-image: url(images/scroll.png);
+    background-position: center;
+    background-size: cover;
     height: 80vh;
-    color:black;
+    width: 100%;
 }
 
 .left-column p{
     display:flex;
-    padding: 15px;
+    padding: 35px;
     align-content:center;
+    color: blue;
     margin:25px;
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -215,14 +245,14 @@ span{
 .right-column{
     height:80vh;
     color:white;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 
 
 .rightImg img {
-    height: 100vh;
-    width: 100vh;
+    height: 80vh;
+    width: 100%;
 }
 
 .right-column h1{
@@ -345,6 +375,10 @@ button {
 
 /*-----------------------------------------Snapiro-----------------------------------------*/
 
+.swiper-slide {
+    height: 100vh;
+    width: 100%;
+}
 
 .snapiro-card {
     display: flex;
@@ -572,7 +606,7 @@ button {
 
 .btnSnapiro {
     color: blue;
-    margin-left: 50%;
+    margin-left: 45%;
     font-size: 20px;
     border-color: #b3bbcf;
     border-radius: 20px;
@@ -592,58 +626,194 @@ button {
 
 
 
-@media screen and (max-width: 600px) {
-    body {
-        background-color: lightgray;
+@media screen and (max-width: 375px) {
+    .toggle-btn .bar{
+        display: flex;
+    }
+
+    .navLink {
+        display: none;
+        width: 100%;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLink ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navLink li {
+        text-align: center;
+        
+    }
+
+    .navLink.active {
+        display: flex;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        left: 90%;
+        top: 45px;
     }
     
-    .topnav li {
-            flex-direction: column;
-            align-items: center;
-            padding: 15px;
+    .toggle-btn .bar{
+        width: 30px;
+        height: 3px;
+        display: flex;
+        margin: 3px;
+        background-color: white;
+        border-radius: 10px;
     }
 
-    .logo {
-        display: none;
-    }
-
-    .banner img{
-        width: 100%;
-        height: 175px;
+    hr {
+        display: flex;
+       
+        
     }
 
     .courses {
+        display: flex;
         flex-direction: column;
+        height: 100vh;
+        width: 100%;
         align-items: center;
+        background-color: lightgray;
     }
 
     .card1, .card2, .card3 {
-        width: 60%;
-        margin-top: 15px;
+        margin-top: 2px;
     }
 
     .main {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 100%;
+        margin-top: px;
         
-        align-items: center;
-        margin-top: 350px;
-        flex-direction: column;
     }
 
-    .left-column img {
+    .left-column {
         width: 100%;
     }
 
-    .right-column img {
+    .rightImg {
+        height: 50vh;
         width: 100%;
     }
+    
+    .right-column {
+        height: 50vh;
+        width: 100%;
+        margin-top: 10px;
+        
+    }
 
-    .last{
+
+    .last {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        margin-top: 540px;
+    }
+
+
+
+    .snapiro img {
+        height: 150%;
+        width: 150px;
+        position: relative;
+        top: 50px;
+        left: 30%;
+    }
+    
+
+    .swiper-slide {
+        margin-top: 75px;
+    }
+
+    .snapiro-card {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
     }
 
-    .function, .react-js, .loop {
-        margin-top: 20px;
+    .snap1 h1, .snap2 h1, .snap3 h1 {
+        font-size: 17px;
     }
+
+    .snap1 p, .snap2 p, .snap3 p {
+        font-size: 13px;
+    }
+
+
+    .snapiro-card2 h1 {
+        font-size: 19px;
+    }
+
+    .snapiro-card2 h4 {
+        font-size: 15px;
+    }
+
+    .btnSnapiro {
+        margin-left: 40%;
+    }
+}
+
+
+@media screen and (max-width: 667px) and (orientation: landscape ){
+
+    .card1 h2, .card2 h2, .card3 h2 {
+        font-size: 15px;
+    }
+
+    .card3 h2 {
+        font-size: 13px;
+    }
+
+    .card3 p {
+        font-size: 12px;
+    }
+
+    .card1 p, .card2 p {
+        font-size: 13px;
+    }
+
+    .jsImg {
+        display: none;
+    }
+
+    .cardbtn3 {
+        font-size: 9px;
+    }
+
+
+    .snap1 p{
+        line-height: 15px;
+    }
+
+    .snap1 h1, .snap2 h1, .snap3 h1 {
+        font-size: 17px;
+    }
+
+    .snap1 p, .snap2 p, .snap3 p {
+        font-size: 14px;
+    }
+
+    .snap2 {
+        margin-top: 35px;
+    }
+
+    .snap3 p {
+        line-height: 15px;
+    }
+
+    .snapiro-card {
+        height: 80%;
+    }
+
 }
